@@ -1,1 +1,274 @@
-ECHO is on.
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+@font-face {
+    font-family: texas-tango;
+
+    src: url("../fonts/texatboldpersonaluse___-webfont.woff") format("woff");
+    src: url("../fonts/texatboldpersonaluse___-webfont.ttf") format("truetype");
+    src: url("../fonts/texatboldpersonaluse___-webfont.woff2") format("woff2");
+    src: url('../fonts/TEXATBOLDPERSONALUSE___.otf');
+    font-style: normal;
+}
+
+body {
+    background: black;
+    color: white;
+
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.main {
+    background: black;
+    height: 700px;
+    border-color: yellow;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+
+/*.slidefromleft {
+    animation: 3s ease-out 0s 1 slideInFromLeft;
+    text-align: cent
+}
+
+*/
+/*@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}*/
+
+/*.blink_me {
+  animation: blinker 1s linear infinite;
+}*/
+
+
+.blink_me {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 0.1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 0.1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/*@keyframes blink {
+
+}*/
+
+@-moz-keyframes blinker {
+
+    /*0% { opacity: 1.0; }*/
+    /*50% { opacity: 0.0; }*/
+    /*100% { opacity: 1.0; }*/
+    from {
+        color: yellow;
+    }
+
+    to {
+        color: red;
+    }
+}
+
+@-webkit-keyframes blinker {
+
+    /*0% { opacity: 1.0; }*/
+    /*50% { opacity: 0.0; }*/
+    /*100% { opacity: 1.0; }*/
+    from {
+        color: yellow;
+    }
+
+    to {
+        color: red;
+    }
+}
+
+@keyframes blinker {
+
+    /*0% { opacity: 1.0; }*/
+    /*50% { opacity: 0.0; }*/
+    /*100% { opacity: 1.0; }*/
+    from {
+        color: yellow;
+    }
+
+    to {
+        color: red;
+    }
+}
+
+.container2 {
+    /*background: black;*/
+    float: left;
+    text-align: center;
+}
+
+.container1 {
+    /*display:inline-block;*/
+    float: left;
+    text-align: center;
+}
+
+.chopper {
+    float: left;
+}
+
+.pork {
+    float:left;
+    top: 100px;
+    position: relative;
+}
+
+.pizzeria {
+    animation: 1.5s ease-out 0s 1 slideInFromLeft;
+    color: red;
+    /*border-style: solid;*/
+    /*border-color: black;*/
+}
+
+.presents {
+    animation: 3s ease-out 0.8s 1 slideInFromLeft;
+}
+
+.think-tank {
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation: 3s ease-out 1.4s 1 slideInFromLeft;
+    /*text-align: center;*/
+    /*right: 0px;*/
+
+    /*background: #333;*2
+  /*padding: 30px;*/
+}
+
+.thinktank-image {
+    /*animation: 3s ease-out 3s 1 slideInFromLeft;*/
+    float: left;
+}
+
+.navbar {
+    border-style: solid;
+    border-color: yellow;
+    background: black;
+}
+
+/*body {margin: 0;font-family: "Segoe UI", Arial, Helvetica, Sans Serif;} a {text-decoration: none; display: inline-block; margin-right: 10px; color:#fff;}*/
+
+.title {
+    text-align: center;
+}
+
+.title1 {
+    animation: 1s ease-out 2s 1 slideInFromLeft;
+}
+
+.title2 {
+    animation: 1s ease-out 4s 1 slideInFromLeft;
+    font-size: 1em;
+}
+
+.title3 {
+    animation: 1s ease-out 6s 1 slideInFromLeft;
+}
+
+/*
+.container {
+    text-align: center;
+}*/
+
+.description {
+    /*padding-left: 2em;*/
+    /*border-style: solid;*/
+    /*border-color: yellow;*/
+    display: inline-block;
+    padding: 20px;
+    /*margin: 100px;*/
+    float: left;
+    /*margin-left: 100px;*/
+    width: 450px;
+    height: 400px;
+    margin-top: 40px;
+    box-sizing: border-box;
+}
+
+.carousel-slide {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+.container1 {
+    width: 450px;
+    margin-top: 25px;
+    /*border-style: solid;*/
+    /*border-color: red;*/
+    float: center;
+    display: inline-block;
+    margin-left: 100px;
+    box-sizing: border-box;
+
+}
+
+/*.carousel-item {
+    margin-right: 0;
+}*/
+
+h1 {
+    width: 450px;
+    /*display: block;*/
+    font-family: texas-tango;
+    /*border-style: solid;*/
+    /*font-weight: 500;*/
+    /*position: absolute;*/
+    /*float: left;*/
+    /*font-size: 4em;*/
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+
+}
+
+h3 {
+    position: relative;
+    /*font-size: 3em;*/
+    text-align: center;
+
+
+}
+
+p {
+    color: red;
+}
+
+.main-container {
+    box-sizing: border-box;
+}
+
+/*.think-tank {
+    transition: all 2ms ease 1s;
+}*/
