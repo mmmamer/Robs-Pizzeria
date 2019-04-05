@@ -1,0 +1,125 @@
+@font-face {
+    font-family: arimo;
+    src: url("../fonts/Arimo-BoldItalic.tff") format("ttf");
+    src: url("../fonts/arimo-bolditalic-webfont.woff") format("woff");
+    src: url("../fonts/arimo-bolditalic-webfont.woff2") format("woff2");
+
+    font-style: italic;
+
+}
+
+* {
+	/*box-sizing: border-box;*/
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+    position: relative;
+    margin: 0 auto;
+    width: 1366px;
+
+}
+
+.page {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 625px;
+    overflow: hidden;
+}
+
+.container1 {
+    margin: 0px auto;
+    background: lightpink;
+    box-sizing: border-box;
+
+    width: 35%;
+    height: 100%;
+
+    text-align: center;
+    border-style: solid;
+    border-color: cyan;
+    font-family: arimo;
+}
+
+.title1 {
+	/*box-sizing: border-box;*/
+    font-family: times new roman;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    background: dodgerblue;
+    color: yellow;
+    font-size: 2.2em;
+    text-shadow: 2px 2px magenta;
+    font-style: italic;
+}
+
+.title2 {
+    /*position: relative;*/
+    margin: 0px;
+    box-sizing: border-box;
+    /*    padding: 0px;
+    margin: 0px;
+    margin-top: 4px;   */
+    color: magenta;
+    /*margin-left:240px;*/
+    /*text-align: c60enter;*/
+}
+
+.title3 {
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0 auto;
+    width: 450px;
+    font-size: 60px;
+    color: white;
+    text-shadow: 4px 4px magenta;
+
+}
+
+.slider {
+  /* line them up horizontally */
+  display: flex;
+
+  /* allow for scrolling */
+  overflow-x: auto;
+
+  /* make it smooth on iOS */
+  -webkit-overflow-scrolling: touch;
+}
+.slider > div {
+  /* make sure the width is honored */
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+}
+
+.slider {
+  /* ... */
+
+  /* each slide snaps into place */
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+}
+
+
+
+
+
+
+
+
+
+
+/*.item:not(:first-of-type) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.control-operator:nth-of-type(2):target~.item:nth-of-type(2) {
+    opacity: 1;
+    visibility: visible;
+}*/

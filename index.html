@@ -3,105 +3,127 @@
 
 <head>
     <meta charset="utf-8">
+    <!-- <button>Only Button</button> -->
     <title>Rob's pizzeria</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+    <link rel="stylesheet" href="css/pagestyle.css">
+    <script type="text/javascript" src="scripts/ajax-utils.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
 </head>
+<!-- do the markup first -->
 
-<body>
-    <div class="main-container">
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">
-                <h1 class="pizzeria">ROB'S PIZZERIA</h1>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">The Mandem</a>
-                    <a class="nav-item nav-link" href="#">Jobs</a> 
-                    <!-- The pages that we want - there needs to be a design language  that is adhered to
-    but what sort of thing is it that we're looking for? 
-                    Do you know.  
-                     -->
-                    <a class="nav-item nav-link" href="#"></a>
-                    <a class="nav-item nav-link" href="#"></a>
-                </div>
-            </div>
-        </nav>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-48" src="RAG.png" alt="First slide">
-                    <div class="container1">
-                        <h2 class="title1">Rob's Pizzeria</h2>
-                        <h3 class="title2">Presents</h3>
-                        <h1 class="blink_me">The Think Tank</h1>
-                        <div class="description">
-                            <p>Also known as Big Rob, Robert the Ripper, The Adamos Chronicles, Thinkers, The Tank, Tanky Baby slip a sable under the tree for me. </p>
-                            <p>You know the one. He murders a cheeky little beat, throws down a naughty little shape and still makes it home to
-                                missus after a hard day of brutally, brutally harming dem bars.
-                            </p>
-                            <p>Likes: Chopping up dem bodies in the studio.</p>
-                            <p>Dislikes: Liars, fakes, scoundrels, scallywags.</p>
-                            <p>Fears: Getting done by the rozzers for killing so frequently.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="container2">
-                        <img class="w-40 chopper" src="PORK.png" alt="Second slide">
-            
-                        <p>Also known as Big Chicken</p>
-                        <p>
-                            Alright, alright, alright. What do we have here? 
-                            Little bit of that lean slice, little bit of that surly bacon and I'm not talking frazzles.
-                            I'm talking about straight carnage on the dance floor my son. I've seen some things but
-                            never quite like this.
-                        </p>
-                        <p>Likes: HODLing Cardano.</p>
-                        <p>Dislikes: The great crypto crash of '18.</p>
-                        <p>Fears: </p>
-                        <h1 class="blink_me pork">Pork Chopper</h1>
-                </div>
-            </div>
-            <!--             <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Third slide">
-            </div> -->
+<body id="home">
+    
+    <!-- <img class="et-dog" src="photo_2019-03-14_18-56-05.jpg" alt="nothing here boys"> -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">The Sanctuary<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">The Mandem</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inside the pizzeria</a>
+                </li>
+            </ul>
+            <!--             <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-nav-ext">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">join the crew</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Get in touch</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--     <nav class="nav navbar">
+        <li>The Sanctuary</li>
+        <li>The Mandem</li>
+        <li>Inside the Pizzeria</li>
+
+    </nav>
+    <nav class="nav navbar">
+        <li>Join the Crew</li>
+        <li>Get in Touch</li>
+    </nav>
+
+ -->
+    <!--     <div class="container2">
+        HOME
+        <div id="home" class="fullpage" pos="0" >
+            
+        </div>
+        <div id="navigation" class="sticktobottom red">
+                <div class="nav nav-left">
+                    <a class="item" href="#_sanctuary">the sanctuary</a>
+                    <span class="item stitch">&nbsp;</span>
+                    <a class="item" href="mandem.html">The Mandem</a>
+                    <span class="item stitch">&nbsp;</span>
+                    <a class="item" href="#_pizzeria">Inside the pizzeria</a>
+                </div>
+
+                <div class="nav nav-center">&nbsp;</div>
+
+                <div class="nav nav-right">
+                    <a class="item" href="#_crew">Join the crew</a>
+                    <span class="item stitch">&nbsp;</span>
+                    <a class="item" href="#_contact">Get in touch</a>
+                </div>
+        </div>
+    </div> -->
     </div>
-    <div class="main">
-        <!--             <div class="thinktank-image">
-                <img src="RAG.png">
-            </div>
-            <div>
-                <div class="container1">
-                    <h2 class="title1">Rob's Pizzeria</h2>
-                    <h3 class="title2">Presents</h3>
-                    <h1 class="blink_me">The Think Tank</h1>
-                </div> -->
-        <!--                 <div class="description">
-                    <p>Also known as Big Rob, Robert the Ripper, The Adamos Chronicles, Thinkers, The Tank, Tanky Baby slip a sable under the tree for me. </p>
-                    <p>You know the one. He murders a cheeky little beat, throws down a naughty little shape and still makes it home to
-                        missus after a hard day of brutally, brutally harming a few bars.
-                    </p>
-                </div> -->
     </div>
-    </div>
-    </div>
-    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="bootstrap.js"></script>
+    <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.js"></script>
+    <!-- <nav class="main-nav"> -->
+    <!--             <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mandem">Mandem</a></li>
+                <li><a href="#jobs">Jobs</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav> -->
+    <!-- HOME -->
+    <!--     <div id="home">
+            
+        </div>
+ -->
+    <!-- PROFILE PAGE -->
+    <!--       <div id="mandem" class="page">
+            
+
+
+
+        </div> -->
+    <!-- JOBS -->
+    <!--      <div id="jobs" class="page">
+            
+
+
+        </div> -->
+    <!-- ABOUT -->
+    <!--     <div id="about" class="page">
+            
+
+
+
+        </div> -->
 </body>
 
 </html>

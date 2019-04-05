@@ -1,0 +1,658 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;  
+}
+
+a,p,em,h1,h2,h3,h4,h5 {
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	-o-user-select: text;
+	user-select: text;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+ul, li
+{
+	list-style-type: none;
+}
+
+.overthrow 
+{
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.overthrow::-webkit-scrollbar 
+{ 
+    display: none; 
+}
+
+.overthrow
+{
+	-ms-overflow-style: none;
+}
+
+#container
+{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.hidden
+{
+	visibility: hidden;
+}
+
+.fullpage
+{
+	position: relative;
+	display: block;
+	left: 0px;
+	right: 0px;
+	z-index: 1;
+}
+
+#home
+{
+	z-index: 10;
+	background-image: url("../images/logo.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#work
+{
+	z-index: 8;
+}
+
+#insta
+{
+	z-index: 6;
+}
+
+#about
+{
+	z-index: 4;
+}
+
+#contact
+{
+	z-index: 2;
+}
+
+#navigation
+{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-family: "futura-pt",sans-serif;
+	font-size: 11px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	z-index: 100;
+	text-decoration: none;
+	height: 60px;
+}
+
+.sticktobottom
+{
+	position: absolute;
+	bottom: 100px;
+}
+
+.sticktotop
+{
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	top: 50px;
+}
+
+.nav
+{
+	display: block;
+	height: 60px;
+	position: absolute;
+}
+
+#container .nav
+{
+	-webkit-transition: all 0.4s ease-out;
+  	-moz-transition: all 0.4s ease-out;
+  	-o-transition: all 0.4s ease-out;
+ 	transition: all 0.4s ease-out;
+}
+
+.nav-left
+{
+	width: 500px;
+	left: 50%;
+	margin-left: -550px;
+	text-align: right;
+}
+
+.nav-right
+{
+	width: 500px;
+	left: 50%;
+	margin-left: 50px;
+	text-align: left;
+}
+
+.nav-center
+{
+	width: 60px;
+	left: 50%;
+	margin-left: -30px;
+	background-image: url("../images/bow.png");
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.red .nav-center
+{
+	background-position: bottom left;
+}
+
+.blue .nav-center
+{
+	background-position: top left;
+}
+
+.nav .item
+{
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+.nav .item.active
+{
+	border-bottom: 1px solid #00C;
+}
+
+.blue, .blue a, a.blue
+{
+	color: #0000cc;
+}
+
+.red, .red a, a.red
+{
+	color: #ff0f0f;
+}
+
+.stitch
+{
+	width: 8px;
+	height: 8px;
+	background-image: url("../images/stitch.png");
+}
+
+#navigation .arrow_left, #navigation .arrow_right
+{
+	width: 44px;
+	height: 14px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+#navigation .arrow_left
+{
+	background-image: url("../images/arrow_left.png");
+	margin-right: 18px;
+}
+
+#navigation .arrow_right
+{
+	background-image: url("../images/arrow_right.png");
+	margin-left: 40px;
+}
+
+.blue .stitch
+{
+	background-position: top left;
+}
+
+.red .stitch
+{
+	background-position: bottom left;
+}
+
+#work_container
+{
+	display: none;
+	width: 100%;
+	overflow: hidden;
+}
+
+.collection
+{
+	display: block;
+	float: left;
+	position: relative;
+ 	
+}
+
+.collection img
+{
+	cursor: pointer;
+	z-index: 10000;
+}
+
+.collection .description
+{
+	display: block;
+	opacity: 0;
+	margin: 40px;
+	font-family: "letter-gothic-std", sans-serif;
+	font-size: 13px;
+	line-height: 160%;
+	position: relative;
+}
+
+.collection .description .text a
+{
+	text-decoration: underline;
+}
+
+.collection .description .smalltext
+{
+	font-size: 10px;
+	margin-bottom: 20px;
+}
+
+.collection .description .smalltext strong
+{
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.collection .description .title
+{
+	font-family: "futura-pt",sans-serif;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+}
+
+.collection .description .closebutton
+{
+	display: block;
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background-image: url("../images/stitch.png");
+	background-position: top left;
+	top: 0px;
+	right: 0px;
+}
+
+/* ABOUT */
+
+#about_container, #insta_container, #contact_container
+{
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 500px;
+	top: 50%;
+	margin-top: -200px;
+	left: 50%;
+	margin-left: -400px;
+	text-align: center;
+}
+
+#contact-container
+{
+	height: 350px;
+}
+
+#insta_container
+{
+	width: 700px;
+	margin-left: -350px;
+	height: 350px;
+	margin-top: -125px;
+}
+
+#insta_container a
+{
+	text-decoration: underline;
+}
+
+.instagram_photo
+{
+	display: block;
+	float: left;
+	width: 350px;
+	height: 350px;
+}
+
+.instagram_video
+{
+	display: block;
+	width: 350px;
+	height: 350px;
+	overflow: hidden;
+	float: left;
+}
+
+#about_container h2, #contact_container h2
+{
+	font-family: "futura-pt", sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+}
+
+#about_container p, #contact_container p
+{
+	display: block;
+	text-align: center;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "letter-gothic-std", sans-serif;
+	font-size: 18px;
+	line-height: 160%;
+	margin-top: 65px;
+	margin-bottom: 60px;
+}
+
+.instagram_description
+{
+	display: block;
+	text-align: left;
+	width: 260px;
+	height: 200px;
+	font-family: "letter-gothic-std", sans-serif;
+	font-size: 14px;
+	line-height: 170%;
+	padding: 40px;
+	float: left;
+}
+
+.instagram_likes
+{
+	display: block;
+	float: left;
+	width: 200px;
+	height: 6px;
+	background-image: url("../images/instaheart.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+	padding: 10px;
+	padding-left: 40px;
+	font-family: "letter-gothic-std", sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	margin-left: 40px;
+	text-align: left;
+}
+
+.contact
+{
+	display: block;
+	width: 200px;
+	height: 150px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+.contact span
+{
+	display: block;
+	position: absolute;
+	font-family: "futura-pt", sans-serif;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	width: 100%;
+	bottom: -30px;
+}
+
+.contact-other small
+{
+	font-size: 10px;
+}
+
+.contact-flashsheet, .contact-workpdf
+{
+	position: relative;
+	margin-top: 50px;
+}
+
+
+#contact_left, #contact_right
+{
+	display: block;
+	width: 400px;
+	height: 350px;
+	float: left;
+}
+
+#contact_left
+{
+	padding-top: 20px;
+}
+
+.contact-adress, .contact-other
+{
+	display: block;
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	padding: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: #0000cc 3px solid;
+	font-family: "letter-gothic-std", sans-serif;
+	font-size: 13px;
+	line-height: 160%;
+	text-align: left;
+}
+
+.contact-flashsheet
+{
+	width: 299px;
+	height: 212px;
+	background-image: url("../images/flashsheet3.png");
+	margin-top: 80px;
+}
+
+.contact-workpdf
+{
+	background-image: url("../images/icon1.png");
+}
+
+#about_container strong, #contact_container strong
+{
+	text-transform: uppercase;
+	font-family: "futura-pt",sans-serif;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.tattoo
+{
+	display: block;
+	position: absolute;
+	background-position: center center;
+	background-repeat: no-repeat;
+	z-index: 80000;
+}
+
+.diamond
+{
+	background-image: url("../images/tattoo1.png");
+	width: 35px;
+	height: 37px;
+	right: -20px;
+	top: 200px;
+}
+
+.sneaker
+{
+	background-image: url("../images/tattoo2.png");
+	width: 194px;
+	height: 141px;
+	right: -100px;
+	top: 50px;
+}
+
+.heart
+{
+	background-image: url("../images/tattoo3.png");
+	width: 42px;
+	height: 39px;
+	right: 50px;
+}
+
+.watch
+{
+	background-image: url("../images/tattoo4.png");
+	width: 66px;
+	height: 113px;
+	right: -30px;
+	top: 80px;
+}
+
+/* SLIDER*/
+
+.unslider 
+{ 
+	display: block;
+	width: 700px;
+	height: 350px;
+	position: relative; 
+	overflow: auto;
+}
+
+.unslider li 
+{ 
+	display: block;
+	width: 700px;
+	height: 350px;
+	list-style: none;
+}
+
+.unslider ul li 
+{ 
+	float: left;
+}
+
+#insta .arrow
+{
+	display: block;
+	position: absolute;
+	width: 44px;
+	height: 14px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	top: 168px;
+	z-index: 20000;
+	cursor: pointer;
+}
+
+#insta .arrow_left
+{
+	background-image: url("../images/arrow_left.png");
+	left: -150px;
+}
+
+#insta .arrow_right
+{
+	background-image: url("../images/arrow_right.png");
+	right: -150px;
+}
+
+/* SINGLE */
+
+#single_campaign
+{
+	display: block;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 150px;
+	margin-bottom: 100px;
+	font-family: "letter-gothic-std", sans-serif;
+	font-size: 13px;
+	line-height: 170%;
+	text-align: center;
+}
+
+#single_campaign img
+{
+	display: block;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#single_campaign p
+{
+	display: block;
+	margin-top: 40px;
+}
+
+.credits
+{
+	font-size: 11px;
+}
+
+.credits span
+{
+	display: inline-block;
+}
+
+.credits strong
+{
+	display: inline-block;
+	font-family: "futura-pt", sans-serif;
+	font-size: 10px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+
+::selection {
+	background: #ccc; /* Safari */
+	}
+::-moz-selection {
+	background: #ccc; /* Firefox */
+}
